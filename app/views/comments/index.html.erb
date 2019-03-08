@@ -1,0 +1,5 @@
+<% @comments.each do |comment| %>
+	<h2><%= comment.comment_body %><h2>
+		<br>
+	<%= link_to "Read POst", post_comment_path(@id, comment) %>
+<% end %>

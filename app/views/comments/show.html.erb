@@ -1,0 +1,7 @@
+<h1><%= @comment.comment_body %></h1>
+<i>Comment made By</i>
+<p><%= @comment.commenter %></p>
+
+<%= link_to "edit post", edit_post_comment_path(@id,@comment) %>
+
+<%= link_to "delete post", post_comment_path(@id,@comment), method: :delete, data: { confirm: "Are you Sure" } %>
